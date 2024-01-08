@@ -1,0 +1,35 @@
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        text-align: center;
+        font-size: 22px;
+        margin: 15px 0;
+    }
+   
+    .container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerInfo,
+    .containerForm {
+        width: 100%;
+    }
+
+    .sci li {
+        margin-bottom: 10px;
+    }
+
+    .FormBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .InputBox {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

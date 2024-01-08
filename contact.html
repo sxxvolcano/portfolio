@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="webb.png">
+    <link rel="stylesheet" href="contact.css">
+    
+
+    <title>Contact me</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" button class="logo">Contact me.</a>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:1;" class="active">Home</a>
+            <a href="about.html" style="--i:2;" >About</a>
+            <!-- <a href="#" style="--i:3;" >Skills</a> -->
+            <a href="portfoli.html" style="--i:4;" >Portfolio</a>
+            <a href="contact" style="--i:5;" >Contact</a>
+        </nav>
+    </header>
+
+
+
+
+    <section class="section3">
+        <div class="container-main">
+            <div class="containerInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="location.png" alt=""></span>
+                            <span>Uzbekistan, Andijan, Andijan<br>
+                                Kunji, Toshloq street, 11<br>
+                                170100
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="mail.png" alt="#"></span>
+                            <span>abdukodirres@gmail.com</span>
+                        </li>
+                        <li>
+                            <span><img src="call.png" alt="#"></span>
+                            <span>+998 99 790-26-06</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <ul class="sci">
+                    <li> <a href="https://www.facebook.com/profile.php?id=100090113118918&mibextid=9R9pXO"><img src="1.png" alt="#"></a></li>
+                    <li> <a href="https://twitter.com/AbduqodirY5423?t=E4S_MEnOyqMsgFJ2ibfUqA&s=09"><img src="2.png" alt="#"></a></li>
+                    <li> <a href="https://www.instagram.com/qodir_prvt?igshid=OGQ5ZDc2ODk2ZA=="><img src="3.png" alt="#"></a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+             <div class="containerForm">
+                    <h2>Send a Message</h2>
+                    
+                    <form action="" id="contact-form">
+                       <div class="FormBox">
+                            <div class="InputBox w50">
+                                <input type="text" name="name" required>
+                                <span>First Name</span>
+                            </div> 
+                            <div class="InputBox w50">
+                                <input type="text" name="lastname" required>
+                                <span>Last Name</span>
+                            </div> 
+                            <div class="InputBox w50">
+                                <input type="email" name="email" required>
+                                <span>Email Address</span>
+                                </div> 
+                                <div class="InputBox w50">
+                                    <input type="text" name="number" required>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <div class="InputBox w100">
+                                    <textarea name="message" required></textarea>
+                                    <span for="message">Write your message here...</span>
+                                </div> 
+                                    <div class="InputBox w100">
+                                            <p class="contact__message" id="contact-message"></p>
+                                            <button type="submit">Send</button>
+                                    </div>
+                        
+                        </div>
+                    </form>     
+             </div>
+       </div>    
+    </section>
+    <script src="contact.js"></script>
+
+
+
+        
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+        
+            footer {
+                background-color: #000;
+                color: #fff;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between; /* Add this line to separate the items */
+                align-items: center; /* Add this line to vertically center the items */
+                padding-left: 18px;
+                padding-right: 15px;
+                opacity: 0.6;
+            }
+        
+            .social-buttons {
+                display: flex;
+                justify-content: flex-end;
+            }
+        
+            .social-button {
+                margin: 0 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        
+            .copyright {
+                font-size: 14px;
+                padding-bottom: 5px;
+            }
+        </style>
+        </head>
+        <body>
+        
+        <!-- Your website content goes here -->
+        
+        <footer>
+            <div class="copyright">
+                &copy; 2023 Designed by Abdukodir.
+            </div>
+        
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/profile.php?id=100090113118918&mibextid=9R9pXO" class="social-button">Facebook</a>
+                <a href="https://twitter.com/AbduqodirY5423?t=E4S_MEnOyqMsgFJ2ibfUqA&s=09" class="social-button">Twitter</a>
+                <a href="https://www.instagram.com/qodir_prvt?igshid=OGQ5ZDc2ODk2ZA==" class="social-button">Instagram</a>
+            </div>
+        </footer>
+
+</body>
+</html>

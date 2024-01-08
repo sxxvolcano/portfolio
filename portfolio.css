@@ -1,0 +1,84 @@
+
+.button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 48px;
+    border-radius: 0px;
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    opacity: 0;
+    animation: slideRight 1s ease forwards; 
+    animation-delay: 1.8s;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg, rgb(39, 151, 104), #3cf, rgb(42, 174, 119));
+    background-size: 200%;
+    background-position: 0 0;
+    z-index: -1;
+    border-radius:  0px;
+    filter: blur(4px);  
+    transition: 1s ease; 
+}
+
+.button:hover::before {
+    background-position: 100% 0;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: #0d948b;
+    background-position: 0 0;
+    background-size: 200%;
+    z-index: -1;
+    border-radius:  0px;
+    transition: 1s ease;
+}
+
+.button:hover::after {
+    background-position: 100% 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .work__container.grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+/* Add the following CSS for responsiveness */
+.work__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.work__card {
+    text-align: center;
+}
+
+.work__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/*  */
